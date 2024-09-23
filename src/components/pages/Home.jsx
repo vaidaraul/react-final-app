@@ -1,5 +1,12 @@
+import Navbar from "../complex/Navbar";
+
 const Home = () => {
-    return <>Eu exist</>;
+    return (
+        <>
+            <Navbar />
+            Eu exist
+        </>
+    );
 };
 
 export default Home;
