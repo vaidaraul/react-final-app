@@ -18,12 +18,7 @@ const Home = () => {
         });
     }, []);
 
-    return (
-        <>
-            <Navbar />
-            {rows.length > 0 ? rows : <p>Loading...</p>}
-        </>
-    );
+    return <>{rows.length > 0 ? rows : <p>Loading...</p>}</>;
 };
 
 export default Home;

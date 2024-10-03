@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../styling/navbar.css";
 import { useState } from "react";
 
@@ -22,10 +22,24 @@ const Navbar = () => {
                     }`}
                 >
                     <li>
-                        <Link to="/">Home</Link>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                isActive ? "active-link" : ""
+                            }
+                        >
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <Link to="/contact">Contact</Link>
+                        <NavLink
+                            to="/contact"
+                            className={({ isActive }) =>
+                                isActive ? "active-link" : ""
+                            }
+                        >
+                            Contact
+                        </NavLink>
                     </li>
                 </ul>
             </nav>
