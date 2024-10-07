@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navbar from "../complex/Navbar";
 import { getPosts } from "../../services/postsService";
 import PostComponent from "../complex/PostComponent";
 
