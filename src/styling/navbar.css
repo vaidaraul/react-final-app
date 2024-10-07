@@ -1,0 +1,44 @@
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-light {
+    background-color: #ddd;
+}
+
+.navbar-dark {
+    background-color: #333;
+}
+
+.active-link {
+    font-weight: bold;
+    border-bottom: 2px solid darkblue;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-links-light {
+    background-color: #ddd;
+}
+
+.navbar-links-dark {
+    background-color: #333;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.25s;
+
+    &:hover {
+        color: #ddd;
+    }
+}
